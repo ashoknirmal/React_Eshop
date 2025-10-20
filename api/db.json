@@ -1,0 +1,171 @@
+{
+  "categories": [
+    {
+      "id": "1",
+      "name": "Electronics"
+    },
+    {
+      "id": "2",
+      "name": "Apparel"
+    },
+    {
+      "id": "3",
+      "name": "Books"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "title": "Wireless Headphones",
+      "categoryId": 1,
+      "price": 2999,
+      "stock": 10,
+      "description": "Noise cancelling headphones.",
+      "image": "https://www.leafstudios.in/cdn/shop/files/1_a43c5e0b-3a47-497d-acec-b4764259b10e_1024x1024.png?v=1750486829"
+    },
+    {
+      "id": "2",
+      "title": "Smartphone",
+      "categoryId": 1,
+      "price": 19999,
+      "stock": 0,
+      "description": "Latest smartphone.",
+      "image": "https://m.media-amazon.com/images/I/51AHHmX-17L.jpg"
+    },
+    {
+      "id": "3",
+      "title": "T-Shirt",
+      "categoryId": 2,
+      "price": 499,
+      "stock": 23,
+      "description": "Comfortable cotton tee.",
+      "image": "https://static.vecteezy.com/system/resources/thumbnails/060/286/579/small_2x/white-t-shirt-mockup-on-grassy-hillside-with-mountains-in-the-background-free-photo.jpeg"
+    },
+    {
+      "id": "4",
+      "title": "Learning React",
+      "categoryId": 3,
+      "price": 999,
+      "stock": 4,
+      "description": "A book on React.",
+      "image": "https://www.roadtoreact.com/twitter.png"
+    }
+  ],
+  "users": [
+    {
+      "id": "user_admin",
+      "uid": "user_admin",
+      "email": "admin@example.com",
+      "name": "Admin User",
+      "password": "admin123",
+      "isAdmin": true
+    },
+    {
+      "id": "si9c1qEy7MfEU887gBW5BZTfcNa2",
+      "uid": "si9c1qEy7MfEU887gBW5BZTfcNa2",
+      "email": "indonesiaserver1601@gmail.com",
+      "name": "Indonesia Server",
+      "isAdmin": false
+    }
+  ],
+  "carts": [
+    {
+      "id": "1",
+      "userId": "user_admin",
+      "items": [
+        {
+          "productId": 1,
+          "quantity": 1
+        }
+      ]
+    }
+  ],
+  "wishlists": [
+    {
+      "id": "1",
+      "userId": "user_admin",
+      "productIds": [
+        3
+      ]
+    },
+    {
+      "id": "ad2b",
+      "userId": "si9c1qEy7MfEU887gBW5BZTfcNa2",
+      "productIds": [
+        "3"
+      ]
+    }
+  ],
+  "addresses": [
+    {
+      "id": "1",
+      "userId": "user_admin",
+      "label": "Home",
+      "line1": "123, Main Street",
+      "city": "Hyderabad",
+      "state": "Telangana",
+      "pincode": "500001"
+    },
+    {
+      "id": "d913",
+      "userId": "si9c1qEy7MfEU887gBW5BZTfcNa2",
+      "label": "home",
+      "line1": "pannakattuthottam opposite",
+      "city": "odathurai",
+      "state": "tamil nadu",
+      "pincode": "638455"
+    }
+  ],
+  "orders": [
+    {
+      "id": "1",
+      "userId": "user_admin",
+      "items": [
+        {
+          "productId": 1,
+          "quantity": 1,
+          "price": 2999
+        }
+      ],
+      "addressId": 1,
+      "total": 2999,
+      "status": "On Process",
+      "createdAt": "2025-10-18T00:00:00.000Z"
+    },
+    {
+      "id": "cf43",
+      "userId": "si9c1qEy7MfEU887gBW5BZTfcNa2",
+      "items": [
+        {
+          "productId": "3",
+          "quantity": 1,
+          "price": 499
+        },
+        {
+          "productId": "4",
+          "quantity": 1,
+          "price": 999
+        }
+      ],
+      "addressId": "d913",
+      "total": 1498,
+      "status": "Shipped",
+      "createdAt": "2025-10-19T12:06:40.140Z"
+    },
+    {
+      "id": "134e",
+      "userId": "si9c1qEy7MfEU887gBW5BZTfcNa2",
+      "items": [
+        {
+          "productId": "3",
+          "quantity": 1,
+          "price": 499
+        }
+      ],
+      "addressId": "d913",
+      "total": 499,
+      "status": "Delivered",
+      "createdAt": "2025-10-19T12:36:20.224Z"
+    }
+  ]
+}
